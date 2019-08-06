@@ -1,5 +1,6 @@
 # Word Mover's Distance
-WMD is an algorithm to compute the distance between two sentences.
+WMD is an algorithm to compute the distance between text documents.
+Use python3 to implement this word.
 
 ## Installation
 Use the pulp package to solve lp.
@@ -8,6 +9,6 @@ pip install pulp
 ```
 
 ## Paper
-From Word Embedding To Document Distances
-
+From Word Embeddings To Document Distances
+http://www.cs.cornell.edu/~kilian/papers/wmd_metric.pdf
 
