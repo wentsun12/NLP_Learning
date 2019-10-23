@@ -14,3 +14,5 @@ Here are severl tasks in the NLP field.
 使用隐马尔可夫模型来判断单词的词性。
 ### Chinese_Segmentation_HMM
 使用隐马尔可夫模型来进行中文分词（jieba分词即是使用该模型）
+### NER_CRF
+实现调用sklearn中的CRF包来进行命名实体识别。
