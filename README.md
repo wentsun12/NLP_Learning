@@ -5,8 +5,8 @@ Here are severl tasks in the NLP field.
 ### WMD
 用WMD算法计算文档间的距离。
 ### Sentence Generation
-1.基于语法规则生成句子，常用语客服等地方
-2.训练一个语言模型
+1.基于语法规则生成句子，常用于客服等地方。
+2.训练一个语言模型。
 3.计算生成的句子的概率。
 ### IBM-model1
 使用IBM-model1来实现翻译。
