@@ -9,7 +9,7 @@ Here are severl tasks in the NLP field.
 2.训练一个语言模型。
 3.计算生成的句子的概率。
 ### IBM-model1
-使用IBM-model1来实现翻译。
+使用IBM-model1来实现两种语言翻译。
 ### HMM_POS_TAGGING
 使用隐马尔可夫模型来判断单词的词性。
 ### Chinese_Segmentation_HMM
