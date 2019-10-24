@@ -16,3 +16,5 @@ Here are severl tasks in the NLP field.
 使用隐马尔可夫模型来进行中文分词（jieba分词即是使用该模型）
 ### NER_CRF
 实现调用sklearn中的CRF包来进行命名实体识别。
+### NER_Bi-LSTM+CRF
+使用Bi-LSTM+CRF来实现命名实体识别。
