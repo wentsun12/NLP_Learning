@@ -13,10 +13,12 @@ Here are severl tasks in the NLP field.
 ### HMM_POS_TAGGING
 使用隐马尔可夫模型来判断单词的词性。
 ### Chinese_Segmentation_HMM
-使用隐马尔可夫模型来进行中文分词（jieba分词即是使用该模型）
+使用隐马尔可夫模型来进行中文分词（jieba分词即是使用该模型）。
 ### NER_CRF
 实现调用sklearn中的CRF包来进行命名实体识别。
 ### NER_Bi-LSTM+CRF
 使用Bi-LSTM+CRF来实现命名实体识别。
 ### py_LR
-使用pytroch实现线性回归
+使用pytroch实现线性回归。
+###  skip_gram
+使用pytroch实现skip-gram训练word2vec，其中实验了负采样。
