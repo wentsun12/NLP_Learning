@@ -21,4 +21,4 @@ Here are severl tasks in the NLP field.
 ### py_LR
 使用pytroch实现线性回归。
 ###  skip_gram
-使用pytroch实现skip-gram训练word2vec，其中实验了负采样。
+使用pytroch实现skip-gram训练word2vec，其中包含了负采样的功能。
