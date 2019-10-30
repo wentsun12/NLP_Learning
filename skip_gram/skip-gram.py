@@ -118,11 +118,11 @@ class NegativeSamplingLoss(nn.Module):
         input_vectors = input_vectors.view(BATCH_SIZE, embed_size, 1)
         output_vectors = output_vectors.view(BATCH_SIZE, 1, embed_size)
         #目标词损失
-        out_loss = torch.bmm(output_vectors, input_vectors).sigmoid().log()
-        out_loss = out_loss.squeeze()
+        out_loss = torch.bmm(output_vectors, input_vectors).sigmoid().log()  #（B,1,1）
+        out_loss = out_loss.squeeze()  # 降维为 B
         #负样本损失
         noise_loss = torch.bmm(noise_vectors.neg(), input_vectors).sigmoid().log()
-        noise_loss = noise_loss.squeeze().sum(1)
+        noise_loss = noise_loss.squeeze().sum(1)   #多个负样本，所以要加和
         #综合计算两类损失
         return -(out_loss + noise_loss).mean()
 
@@ -149,9 +149,9 @@ for e in range(EPOCHS):
         if steps%PRINT_EVERY == 0:
             print("loss：",loss)
         #梯度回传
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+        optimizer.zero_grad()  # 损失置0，每epoch的损失无关，所以每次需要至零。
+        loss.backward()        # 回传
+        optimizer.step()       # 更新参数
 
 #可视化词向量
 for i, w in int2vocab.items():
