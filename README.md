@@ -18,3 +18,5 @@ Here are severl tasks in the NLP field.
 实现调用sklearn中的CRF包来进行命名实体识别。
 ### NER_Bi-LSTM+CRF
 使用Bi-LSTM+CRF来实现命名实体识别。
+### py_LR
+使用pytroch实现线性回归
